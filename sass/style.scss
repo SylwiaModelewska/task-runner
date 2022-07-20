@@ -1,6 +1,10 @@
-/* Global */
+/* Variables */
 
 $color-one: #ffa502;
+$color-two: #f1f2f6;
+$color-three: #fff;
+
+/* Global */
 
 *
 , *::before
@@ -44,7 +48,7 @@ h2 + p {
     background-image: url("/images/header.jpg");
     background-position: center center;
     background-size: cover;
-    color: #fff;
+    color: $color-three;
 }
 
 .row {
@@ -142,4 +146,33 @@ nav a {
     border-radius: 50%;
     border-color: $color-one;
     border-width: 3px;
+}
+
+/* Our portfolio */
+
+.portfolio {
+    padding: 108px 0;   
+    margin: 0;
+    background-color: $color-two; 
+}
+
+.portfolio .card {
+    padding: 0 30px;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.box {
+    background-color: $color-three;
+}
+
+.box h4 {
+    margin: 0;
+}
+
+.box p {
+    margin: 0;
+    padding-bottom: 15px;
 }
