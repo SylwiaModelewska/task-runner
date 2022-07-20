@@ -1,5 +1,7 @@
 /* Global */
 
+$color-one: #ffa502;
+
 *
 , *::before
 , *::after {
@@ -17,10 +19,28 @@ a {
     color: inherit;
 }
 
+.container {
+    text-align: center;
+}
+
+.short-text {
+    color: #636e72;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 40px; 
+    margin: 0;
+}
+
+h2 + p {
+    margin-top: 0;
+}
+
 /* Nav & Header*/
 
 .ontop {
-    height: 100vh;
+    max-height: 100vh;
     background-image: url("/images/header.jpg");
     background-position: center center;
     background-size: cover;
@@ -35,7 +55,7 @@ a {
 
 nav .col-4 {
     padding-left: 150px;
-    color: #ffdd59;
+    color: $color-one;
 }
 
 .col-8 {
@@ -54,8 +74,13 @@ nav li {
     margin: 0 36px 0 0;
 }
 
+nav li:hover {
+    color:$color-one;
+}
+
 nav a {
     padding-left: 15px;
+    font-weight: bold;
 }
 
 .splash {
@@ -90,7 +115,31 @@ nav a {
     cursor: pointer;
     border-width: 2px;
     border-style: none;
-    background-color: #ffdd59;
+    background-color: $color-one;
     text-transform: uppercase;
     font-style: bold;
+}
+
+/* Services */
+
+.services {
+    margin: 96px auto;
+}
+
+.description {
+    color: #636e72;
+    font-size: 16px;
+}
+
+.services i {
+    font-size: 36px;
+    background: inherit;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    color: $color-one;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: $color-one;
+    border-width: 3px;
 }
