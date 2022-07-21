@@ -176,3 +176,29 @@ nav a {
     margin: 0;
     padding-bottom: 15px;
 }
+
+/* Footer */
+
+.footer i {
+    font-size: 18px;
+    background: #000;
+    width: 40px;
+    height: 40px;
+    color: $color-three;
+    border-radius: 50%;
+    line-height: 40px;
+}
+
+.footer li {
+    font-size: 0;   
+    display: inline;
+}
+
+.footer p {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.footer .row {
+    padding: 30px 0;
+}
