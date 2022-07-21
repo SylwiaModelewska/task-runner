@@ -4,6 +4,9 @@ $color-one: #ffa502;
 $color-two: #f1f2f6;
 $color-three: #fff;
 
+$font-one: 'Open Sans', sans-serif;
+$font-two: 'Pacifico', cursive;
+
 /* Global */
 
 *
@@ -16,6 +19,7 @@ body {
     margin: 0;
     font-size: 16px;
     line-height: 1.7;
+    font-family: $font-one;
 }
 
 a {
@@ -42,6 +46,10 @@ h2 + p {
 }
 
 /* Nav & Header*/
+
+.brand {
+    font-family: $font-two;
+}
 
 .ontop {
     max-height: 100vh;
@@ -161,7 +169,7 @@ nav a {
 }
 
 .card img {
-    max-width: 100%;
+    width: 100%;
 }
 
 .box {
@@ -201,4 +209,31 @@ nav a {
 
 .footer .row {
     padding: 30px 0;
+}
+
+
+@media (max-width: 975px) {
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .card {
+        padding-bottom: 20px;
+    }
+
+    .box {
+        margin-bottom: 30px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+
+    .footer i {
+        font-size: 12px;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+    }
 }
